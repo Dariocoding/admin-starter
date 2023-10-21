@@ -1,0 +1,41 @@
+.side-nav {
+	@apply flex-col flex-auto flex-shrink-0 z-20 transition-all ease-in-out duration-200;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.side-nav-expand {
+	@apply sticky top-0 h-screen;
+}
+
+.side-nav-content {
+	height: calc(100vh - theme('spacing.16'));
+	@apply overflow-y-auto;
+}
+
+.side-nav-light {
+	@apply bg-white border-r border-gray-200;
+}
+
+.side-nav-transparent {
+	@apply bg-transparent;
+}
+
+.side-nav-header {
+	@apply border-gray-200 border-b-2 flex items-center justify-center;
+}
+
+.ReactCollapse--collapse {
+	transition: height 500ms;
+}
+
+.side-nav-item {
+	@apply px-3 py-2.5 flex items-center justify-between text-sm hover:bg-gray-200 transition rounded-xl cursor-pointer;
+}
+
+.side-nav-item-collapsed {
+	@apply px-3 py-2.5 flex items-center text-sm hover:bg-gray-200 transition cursor-pointer;
+}
+
+.side-nav-item-collapsed-container {
+	@apply ml-3 bg-gray-100 mt-1 rounded-lg overflow-hidden;
+}

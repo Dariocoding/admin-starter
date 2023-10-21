@@ -1,0 +1,19 @@
+.avatar {
+  @apply w-10 h-10 rounded-full;
+}
+
+.avatar .avatar-squared {
+  @apply rounded;
+}
+
+.avatar .avatar-bordered {
+  @apply p-1 ring-2 ring-gray-300 dark:ring-gray-500;
+}
+
+.avatar-group {
+  @apply flex -space-x-4;
+}
+
+.avatar-group .avatar {
+  @apply lg:border-2 border-white dark:border-gray-800;
+}

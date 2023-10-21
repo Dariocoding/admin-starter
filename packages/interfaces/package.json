@@ -1,0 +1,13 @@
+{
+  "name": "@teslo/interfaces",
+  "version": "1.0.0",
+  "description": "Interfaces Entities Teslo",
+  "author": "DarioCoding <darioflores170@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc -p tsconfig.json --watch",
+    "build": "tsc -p tsconfig.json"
+  }
+}

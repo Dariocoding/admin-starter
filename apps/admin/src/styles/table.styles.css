@@ -1,0 +1,41 @@
+.table-responsive {
+	@apply overflow-x-auto relative rounded-lg shadow-md;
+}
+
+.table {
+	@apply w-full text-sm text-left text-gray-900;
+}
+
+.table thead {
+	@apply text-xs text-gray-800 uppercase;
+}
+
+.table thead tr th {
+	@apply py-2.5 px-4;
+}
+
+.table thead tr th:nth-child(odd),
+.table tbody tr td:nth-child(odd),
+.table tfoot tr td:nth-child(odd) {
+	@apply bg-gray-50;
+}
+
+.table tbody tr {
+	@apply border-b border-gray-200;
+}
+.table tbody tr:last-child {
+	@apply border-0;
+}
+
+.table tbody {
+	@apply text-sm;
+}
+
+.table tbody tr td,
+.table tfoot tr td {
+	@apply py-3 px-4;
+}
+
+.table tbody tr td:first-child {
+	@apply font-medium text-gray-900 whitespace-nowrap;
+}

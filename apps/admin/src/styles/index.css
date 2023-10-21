@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.tile {
+  @apply relative flex flex-col min-w-0 break-words w-full mb-6 shadow-md rounded-lg bg-white p-6;
+}
+
+.react-confirm-alert-body h1 {
+  @apply text-xl font-bold mb-1;
+}
+
+.react-confirm-alert-button-group button:first-child {
+  @apply bg-teal-600 text-white hover:bg-teal-500 transition;
+}
+
+.react-confirm-alert-button-group button:nth-child(2) {
+  @apply bg-red-600 text-white hover:bg-red-500 transition;
+}
+
+/* Tamaño del scroll */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Estilos barra (thumb) de scroll */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #353535;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #383838;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+::-webkit-scrollbar-track {
+  background: #bbbbbb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+  background: #b3b3b3;
+}
+
+.shadow-right-custom {
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.link-table {
+  @apply hover:underline text-sky-800 hover:text-blue-900 duration-300 transition;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 5s;
+}
+
+.bg {
+  background-image: url("https://img.freepik.com/vector-gratis/diseno-fondo-abstracto-formas-negras_1017-31904.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,71 @@
+.drawer-content {
+  display: flex;
+  position: absolute;
+  background-color: #ffffff;
+  flex-direction: column;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.drawer-content.vertical {
+  height: 100%;
+}
+
+.drawer-content.horizontal {
+  width: 100%;
+}
+
+.drawer-header {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-color: #e5e7eb;
+}
+
+.drawer-body {
+  overflow-y: auto;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.drawer-footer {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-top-width: 1px;
+  border-color: #e5e7eb;
+}
+
+.drawer-open {
+}
+
+.drawer-open .drawer-lock-scroll {
+  overflow: hidden;
+}
+
+.drawer-overlay {
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.drawer-overlay-after-open {
+  opacity: 1;
+}
+
+.drawer-overlay-before-close {
+  opacity: 0;
+}

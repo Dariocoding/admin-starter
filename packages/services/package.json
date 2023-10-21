@@ -1,0 +1,17 @@
+{
+  "name": "@teslo/services",
+  "version": "1.0.0",
+  "description": "Services Teslo",
+  "author": "DarioCoding <darioflores170@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc -p tsconfig.json --watch",
+    "build": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@teslo/interfaces": "1.0.0",
+    "axios": "^1.5.1"
+  }
+}
