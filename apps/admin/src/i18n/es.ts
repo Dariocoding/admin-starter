@@ -38,7 +38,6 @@ const LoginTranslate = {
   "login.recover.error.passwordDoNotMatch": "Contraseñas no coinciden",
   "login.recover.success": "¡Contraseña cambiada con éxito!",
   "login.recover.loading.toast": "Actualizando contraseña...",
-  "login.error.isCustomer": "Acceso restringido",
 };
 
 const AppGeneralTranslate = {
@@ -89,9 +88,9 @@ const UsersTranslate = {
   "users.delete.youSure": "¿Estás seguro de que quieres eliminar este usuario: {name}?",
   "users.delete.youWillNotBeAbleToRecover": "¡No podrás recuperar este usuario!",
   "users.admins": "Administradores",
-  "users.customers": "Clientes",
+  "users.customers": "Usuarios",
   "users.admin": "Administrador",
-  "users.customer": "Cliente",
+  "users.customer": "Usuario",
   "users.deleted.success": "¡Usuario eliminado con éxito!",
   "users.deleted.error": "¡Error al eliminar el usuario!",
   "users.add.success": "¡Usuario agregado con éxito!",
@@ -123,12 +122,12 @@ const UsersTranslate = {
   "users.error.password.required": "¡Por favor ingrese su contraseña!",
   "users.error.password.invalidLength": "¡La contraseña debe tener al menos 6 caracteres!",
   "users.error.email.alreadyExist": "¡El correo electrónico ya existe!",
-  "users.customer.add": "Nuevo cliente",
+  "users.customer.add": "Nuevo usuario",
   "users.supervisor": "Supervisor",
   "users.supervisors": "Supervisores",
   "users.seller": "Vendedor",
   "users.sellers": "Vendedores",
-  "users.action.create.customer": "Crear cliente",
+  "users.action.create.customer": "Crear usuario",
 };
 
 const SettingsTranslate = {

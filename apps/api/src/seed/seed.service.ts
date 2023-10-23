@@ -62,19 +62,13 @@ export class SeedService {
     const configEnterprise = this.configEnterpriseRepository.create(initialData.configEnterprise);
 
     const dbConfigEnterprise = await this.configEnterpriseRepository.save(configEnterprise);
-    return dbConfigEnterprise[0];
+    return dbConfigEnterprise;
   }
 
   private async insertConfigApp() {
-    const configApp = [initialData.configApp];
-
-    const insertPromises: ConfigApp[] = [];
-
-    configApp.forEach((config) => {
-      insertPromises.push(this.configAppRepository.create(config));
-    });
-
-    const dbConfigApp = await this.configAppRepository.save(insertPromises);
-    return dbConfigApp[0];
+    const configApp = await this.configAppRepository.save(
+      this.configAppRepository.create(initialData.configApp)
+    );
+    return configApp;
   }
 }

@@ -12,9 +12,6 @@ import { ISignInFormProps } from ".";
 import { validPaths } from "@/utils";
 import useTimeOutMessage from "@/utils/hooks/useTimeOutMessage";
 import { validate as validateUUID } from "uuid";
-import * as Yup from "yup";
-import { ValidRoles } from "@teslo/interfaces";
-import toast from "react-hot-toast";
 
 const ForgottenPasswordForm = React.lazy(() => import("../ForgottenPasswordForm"));
 
@@ -32,10 +29,7 @@ export const useInitSignInForm = (props: ISignInFormProps, INITIAL_VALUES: Login
   const onSubmit = async (values: LoginUserDto) => {
     try {
       const req = await authService.logIn(values);
-      if (req.data.user?.roles.includes(ValidRoles.USER)) {
-        toast.error(formatMessage({ id: "login.error.isCustomer" }));
-        return;
-      }
+
       await initAuthenticate(req.data);
       if (checked || userRemember) {
         storeUserRememberLocalStorage(req.data.user);
@@ -80,7 +74,7 @@ export const useInitSignInForm = (props: ISignInFormProps, INITIAL_VALUES: Login
   React.useEffect(() => {
     async function init() {
       const userRemember = getUserRememberLocalStorage();
-      if (validateUUID(userRemember)) {
+      if (+userRemember > 0) {
         try {
           setLoading(true);
           const { data: user } = await usersService.getUser(userRemember);

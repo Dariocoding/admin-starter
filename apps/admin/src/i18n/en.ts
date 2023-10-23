@@ -38,7 +38,6 @@ const LoginTranslate = {
   "login.recover.error.passwordDoNotMatch": "Passwords do not match",
   "login.recover.success": "Password changed successfully!!",
   "login.recover.loading.toast": "Updating password...",
-  "login.error.isCustomer": "You are not able to enter because you are a customer",
 };
 
 const AppGeneralTranslate = {
